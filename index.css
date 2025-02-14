@@ -8,25 +8,26 @@ body {
     background-size: contain;
     background-color: rgba(255, 255, 255, 1);
 }
+.separator{
+    font-size: 14px;
+    font-weight: 100;
+    vertical-align: bottom;
+}
 .login {
     display: flex;
     gap: 10px;
     margin-bottom: 40px;
-    font-weight: 250;
-    font-size: 18px;
+    font-weight: 700;
+    font-size: 20px;
     line-height: 16px;
-    letter-spacing: 0%;
 }
 .login a{
     text-decoration: none;
     color: rgba(61, 61, 61, 1);
-    font-weight: bold;
-    font-weight: 500;
     font-size: 20px;
 }
 .login a.reg {
     color: rgba(70, 163, 88, 1);
-    font-weight: 500;
     font-size: 20px;
 }
 .login a.log {
@@ -34,6 +35,7 @@ body {
 }
 form{
     width: 300px;
+    margin: 0 auto;
 }
 form label{
     font-weight: 400;
@@ -44,41 +46,49 @@ form label{
 input{
     display: block;
     margin: 16px 0;
-    max-width: 300px;
+    max-width: 270px;
+    padding: 6px 14px;
     height: 40px;
+    font-size: 14px;
     width: 100%;
     border-radius: 5px;
-    border-width: 1px;
     border: 1px solid rgba(234, 234, 234, 1)
 }
 button{
+    width: 300px;
+    border-radius: 5px;
+    img{
+        vertical-align: middle;
+        margin-right: 8px;
+    }
+    cursor: pointer;
+}
+button.main{
     margin: 25px 0;
-    margin-bottom: 36px;
+    padding: 16px 14px 13px;
     font-weight: 700;
     font-size: 16px;
     line-height: 16px;
-    width: 300px;
     height: 45px;
     width: 100%;
-    border-radius: 5px;
     background-color: rgba(70, 163, 88, 1);
     color: rgba(255, 255, 255, 1);
     border: none;
-    cursor: pointer;
 }
 button:hover{
      background-color: rgb(19, 122, 41);
- }
-div1{
+}
+.div1{
     font-weight: 400;
     font-size: 13px;
     line-height: 13px;
-    margin-bottom: 12px;
+    margin-bottom: 27px;
+    margin-top: 35px;
 }
 .href{
     text-decoration: none;
 }
-div.href button{
+button.secondary{
     margin: 15px 0;
     display: block;
     background-color: white;
@@ -87,10 +97,15 @@ div.href button{
     font-size: 13px;
     line-height: 13px;
     text-align: center;
-    width: 300px;
     height: 40px;
     max-width: 100%;
-    border-radius: 5px;
     border-width: 1px;
     border: 1px solid rgba(234, 234, 234, 1);
+}
+.border-line{
+    display: inline-block;
+    height: 1px;
+    width: 95px;
+    background-color: rgba(234, 234, 234, 1);
+    vertical-align: middle;
 }

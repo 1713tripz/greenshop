@@ -8,21 +8,26 @@
     </head>
     <body>
         <div class="login">
-            <a href="">Login</a> |
+            <a href="">Login</a><span class="separator">|</span>
             <a href="indext.html" class="reg">Register</a>
         </div>
         <form>
-            <label class="label">Enter your email and password to register.</label>
-            <input type="name" placeholder="Username" required>
+            <h1 class="label">Enter your email and password to register.</h1>
+            <input type="text" placeholder="Username" required>
             <input type="email" placeholder="Enter your email address" required>
             <input type="password" placeholder="Password" required>
             <input type="password" placeholder="Confirm Password" required>
-            <button>Register</button>
+            <button class="main" type="submit">Register</button>
         </form>
-        <div class="div1">Or register with</div>
+            <h1>
+        <div class="div1">
+            <span class="border-line"></span>
+                Or register with
+            <span class="border-line"></span>
+        </div>
         <div class="href">
-            <a href="https://www.google.com/"><button class="but">Continue with Google</button></a>
-            <a href="https://www.facebook.com/"><button class="but">Continue with Facebook</button></a>
+            <button class="secondary"><img width="20" height="20" src="./img/google.svg" alt="google"><span>Continue with Google</span></button>
+            <button class="secondary"><span>Continue with Facebook</span></button>
         </div>
     </body>
 </html>
