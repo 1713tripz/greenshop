@@ -16,14 +16,40 @@
                 <label>Enter your email and password to login.</label>
                 <input type="text" id="username" placeholder="Username" required>
                 <input type="email" id="email" placeholder="Email" required>
-                <input type="password" id="password" placeholder="Password" required>
+                <div class="password-container">
+                    <input type="password" placeholder="Password" required>
+                    <button class="toggle-pass"><img src="./img/hide.svg" alt="hide"></button>
+                </div>
                 <button class="main" type="submit">Login</button>
             </form>
         </div>
-        <div class="div1">Or login with</div>
+        <div class="div1">
+            <span class="border-line"></span>
+                Or login with
+            <span class="border-line"></span>
+        </div>
         <div class="href">
             <button class="secondary"><img width="20" height="20" src="./img/google.svg" alt="google"><span>Continue with Google</span></button>
-            <button class="secondary"><span>Continue with Facebook</span></button>
+            <button class="secondary"><img width="20" height="20" src="./img/facebook.svg" alt="facebook"><span>Continue with Facebook</span></button>
         </div>
+        <script>
+
+            const togglePass = document.querySelectorAll('.toggle-pass');
+            togglePass.forEach((toggle) => {
+                toggle.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    const input = toggle.previousElementSibling;
+                    if (input.type === 'password') {
+                        input.type = 'text';
+                        input.focus();
+                        toggle.innerHTML = '<img src="./img/show.svg" alt="show">';
+                    } else {
+                        input.type = 'password';
+                        input.focus();
+                        toggle.innerHTML = '<img src="./img/hide.svg" alt="hide">';
+                    }
+                });
+            });
+        </script>
     </body>
 </html>
