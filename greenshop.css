@@ -1,0 +1,149 @@
+*{
+    display: inline-block;
+    background-color: white;
+    font-family: Arial,sans-serif;
+    letter-spacing: 0;
+}
+html{
+    width: 1440px;
+}
+header{
+    width: 1200px;
+    height: 53px;
+    margin: 30px 120px 12px 120px;
+}
+header img{
+    width: 150px;
+    height: 34px;
+    top: 1px;
+    margin: 1px 229px 17px 0;
+    vertical-align: top;
+}
+.but1{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    border: none;
+    background-color: white;
+    margin: 8px 50px 25px 0;
+    vertical-align: top;
+    cursor: pointer;
+}
+.but2{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    border: none;
+    background-color: white;
+    margin: 8px 50px 25px 0;
+    vertical-align: top;
+    cursor: pointer;
+}
+.line{
+    background: rgba(70, 163, 88, 0.5);
+    max-width: 1200px;
+    width: 100%;
+    height: 1px;
+    margin: 0 120px 12px 120px;
+}
+.log{
+    background: rgba(70, 163, 88, 1);
+    color: rgba(255, 255, 255, 1);
+    width: 100px;
+    height: 35px;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    text-align: right;
+    padding: 8px 17px 7px 41px;
+    margin: 0 0 18px 257px;
+    img {
+        position: absolute;
+        z-index: 1;
+        background: transparent;
+        border: none;
+        width: 20px;
+        height: 20px;
+        top: 7px;
+        left: 17px;
+    }
+}
+.log:hover{
+    background-color: rgb(19, 122, 41);
+}
+.main{
+    width: 1200px;
+    height: 450px;
+    margin: 0 120px 52px 120px;
+}
+.first{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: normal;
+    color: rgba(61, 61, 61, 1);
+    margin: 68px 952px 0 43px;
+}
+.second{
+    font-weight: 900;
+    font-size: 70px;
+    line-height: 70px;
+    letter-spacing: 0;
+    color: rgba(61, 61, 61, 1);
+    width: 650px;
+    height: 140px;
+    margin: 7px 0 5px 40px;
+}
+.planet{
+    color: rgba(70, 163, 88, 1);
+}
+.third{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0;
+    color: rgba(114, 114, 114, 1);
+    width: 530px;
+    margin: 0 0 0 43px;
+}
+main img{
+    width: 507px;
+    height: 450px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    bottom: 253px;
+    left: 115px;
+}
+main img.flr{
+    width: 135px;
+    height: 135px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    bottom: 410px;
+    left: 650px;
+}
+.but3{
+    cursor: pointer;
+    width: 140px;
+    height: 40px;
+    border-radius: 6px;
+    background: rgba(70, 163, 88, 1);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0;
+    color: white;
+    border: none;
+    position: relative;
+    bottom: 360px;
+    right: 95px;
+}
+.but3:hover{
+     background-color: rgb(19, 122, 41);
+ }
