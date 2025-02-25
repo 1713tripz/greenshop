@@ -3,52 +3,24 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Registration</title>
-        <link rel="stylesheet" href="index.css">
+        <title>Greenshop</title>
+        <link rel="stylesheet" href="./greenshop.css">
     </head>
     <body>
-        <div class="login">
-            <a href="indext.html" class="reg">Login</a><span class="separator">|</span>
-            <a href="">Register</a>
-        </div>
-        <form>
-            <label class="label">Enter your email and password to register.</label>
-            <input type="text" placeholder="Username" required>
-            <input type="email" placeholder="Enter your email address" required>
-            <div class="password-container">
-                <input type="password" placeholder="Password" required>
-                <button class="toggle-pass"><img src="./img/hide.svg" alt="hide"></button>
-            </div>
-            <input type="password" placeholder="Confirm Password" required>
-            <button class="main" type="submit">Register</button>
-            <div class="div1">
-                    <span class="border-line"></span>
-                        Or register with
-                    <span class="border-line"></span>
-            </div>
-            <div class="href">
-                <a href=./greenshop.html><button class="secondary"><img width="20" height="20" src="./img/google.svg" alt="google"><span>Continue with Google</span></button></a>
-                <button class="secondary"><img width="20" height="20" src="./img/facebook.svg" alt="facebook"><span>Continue with Facebook</span></button>
-            </div>
-        </form>
-    <script>
-
-            const togglePass = document.querySelectorAll('.toggle-pass');
-            togglePass.forEach((toggle) => {
-            toggle.addEventListener('click', (event) => {
-                event.preventDefault();
-                const input = toggle.previousElementSibling;
-                if (input.type === 'password') {
-                    input.type = 'text';
-                    input.focus();
-                    toggle.innerHTML = '<img src="./img/show.svg" alt="show">';
-                } else {
-                    input.type = 'password';
-                    input.focus();
-                    toggle.innerHTML = '<img src="./img/hide.svg" alt="hide">';
-                }
-            });
-        });
-    </script>
+        <header>
+        <img src="./img/group.svg" alt="Group"><button class="but1">Home</button>
+            <button class="but2">Shop</button>
+            <button class="but2">Plant Care</button>
+            <button class="but2">Blogs</button>
+            <a href="login.html"><button class="log"><img src="./img/logout.svg" alt="Logout">Login</button></a>
+        </header>
+        <div class="line"></div>
+        <main class="main">
+            <h1 class="first">WELCOME TO GREENSHOP</h1>
+            <h1 class="second">LET’S MAKE A BETTER <span class="planet">PLANET</span></h1>
+            <h1 class="third">We are an online plant shop offering a wide range of cheap and trendy plants. Use our plants to create an unique Urban Jungle. Order your favorite plants!</h1>
+            <img src="./img/flr.png" alt="flr" class="flr">
+            <button class="but3">SHOP NOW</button>
+        </main>
     </body>
 </html>
