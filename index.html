@@ -4,23 +4,39 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Greenshop</title>
-        <link rel="stylesheet" href="./greenshop.css">
+        <link rel="stylesheet" href="./style/greenshop.css">
+        <link rel="stylesheet" href="./style/font.css">
+        <style>
+            .main_box {
+                font-family: "Cera Pro", sans-serif;
+                font-weight: 700;
+            }
+        </style>
     </head>
     <body>
         <header>
-        <img src="./img/group.svg" alt="Group"><button class="but1">Home</button>
-            <button class="but2">Shop</button>
-            <button class="but2">Plant Care</button>
-            <button class="but2">Blogs</button>
-            <a href="login.html"><button class="log"><img src="./img/logout.svg" alt="Logout">Login</button></a>
+            <nav>
+                <img src="./img/group.svg" alt="Group"><button class="but1">Home</button>
+                <button class="but2">Shop</button>
+                <button class="but2">Plant Care</button>
+                <button class="but2">Blogs</button>
+                <a href="login.html"><button class="log"><img src="./img/logout.svg" alt="Logout">Login</button></a>
+            </nav>
         </header>
         <div class="line"></div>
         <main class="main">
-            <h1 class="first">WELCOME TO GREENSHOP</h1>
-            <h1 class="second">LET’S MAKE A BETTER <span class="planet">PLANET</span></h1>
-            <h1 class="third">We are an online plant shop offering a wide range of cheap and trendy plants. Use our plants to create an unique Urban Jungle. Order your favorite plants!</h1>
-            <img src="./img/flr.png" alt="flr" class="flr">
-            <button class="but3">SHOP NOW</button>
+            <section>
+                <div class="main_box">
+                    <div class="first">WELCOME TO GREENSHOP</div>
+                    <div class="second">LET’S MAKE A BETTER <span class="planet">PLANET</span></div>
+                    <div class="third">We are an online plant shop offering a wide range of cheap and trendy plants. Use our plants to create an unique Urban Jungle. Order your favorite plants!</div>
+                    <button class="but3">SHOP NOW</button>
+                </div>
+                <div class="container">
+                    <img src="./img/flr.png" alt="flr" class="flr">
+                    <img src="./img/flr.png" alt="flr" class="flr1">
+                </div>
+            </section>
         </main>
     </body>
 </html>

@@ -1,5 +1,5 @@
 *{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Cera Pro", sans-serif;
 }
 main {
     max-width: 1200px;
@@ -107,14 +107,14 @@ header img{
     width: 507px;
     height: 450px;
     position: relative;
-    bottom: 283px;
+    bottom: 370px;
     left: 757px;
 }
 .flr1{
     width: 135px;
     height: 135px;
     position: relative;
-    bottom: 303px;
+    bottom: 390px;
     left: 295px;
 }
 .but3{
@@ -129,9 +129,7 @@ header img{
     letter-spacing: 0;
     color: white;
     border: none;
-    position: relative;
-    bottom: 375px;
-    right: 469px;
+    margin: 44px 0 0 41px;
 }
 .but3:hover{
     background-color: rgb(19, 122, 41);
