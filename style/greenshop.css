@@ -1,16 +1,11 @@
 *{
     font-family: "Cera Pro", sans-serif;
 }
-main {
+nav{
     max-width: 1200px;
     margin: 12px auto;
-    background: linear-gradient(97.77deg, rgba(245, 245, 245, 0.5) -23.46%, rgba(245, 245, 245, 0.5) 107.51%);
 }
-header{
-    max-width: 1200px;
-    margin: 0 auto;
-}
-header img{
+nav img{
     width: 150px;
     height: 34px;
     top: 1px;
@@ -101,9 +96,10 @@ header img{
     color: rgba(114, 114, 114, 1);
     margin: 0 0 0 43px;
 }
-section{
-    display: inline-block;
+.section1{
     max-width: 1200px;
+    margin: 12px auto;
+    background: linear-gradient(97.77deg, rgba(245, 245, 245, 0.5) -23.46%, rgba(245, 245, 245, 0.5) 107.51%);
 }
 .left{
     display: inline-block;
@@ -136,4 +132,95 @@ section{
 }
 .but3:hover{
     background-color: rgb(19, 122, 41);
+}
+.section2{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.setbar{
+    float: left;
+    background-color: rgba(251, 251, 251, 1);
+    color: rgba(61, 61, 61, 1);
+    a{
+        display: block;
+        margin: 0 189px 0 30px;
+        font-family: Cera Pro,sans-serif;
+        font-size: 15px;
+        line-height: 40px;
+    }
+    .bottom-setbar{
+        margin-bottom: 300px;
+    }
+}
+.hplants{
+    color: rgba(70, 163, 88, 1);
+    font-weight: 700;
+}
+h5{
+    color: rgba(61, 61, 61, 1);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    margin: 6px 0;
+}
+h4{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 16px;
+    color: rgba(70, 163, 88, 1);
+    margin-top: 6px;
+}
+.set{
+    float: right;
+    img{
+        width: 250px;
+        height: 250px;
+    }
+}
+.ctg{
+    margin: 14px 18px 7px;
+    font-family: Cera Pro , sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 16px;
+}
+.supersale{
+    width: 310px;
+    height: 470px;
+}
+.float-block{
+    max-width: 840px;
+    margin-top: 10px;
+    margin-left: auto;
+}
+.card{
+    float: left;
+    width: 258px;
+    margin: 33px 10px 33px 0;
+}
+.clearfix{
+    clear: both;
+}
+.nav1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 838px;
+    margin: 0 auto;
+}
+.filter-left{
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 16px;
+    display: flex;
+    gap:20px
+}
+.filter-left span.allplants{
+    color: rgba(70, 163, 88, 1);
+    border-bottom: 2px solid rgba(70, 163, 88, 1);
+    padding-bottom: 7px;
+}
+.filter-right{
+    white-space: nowrap;
 }
