@@ -135,18 +135,21 @@ nav img{
 }
 .section2{
     max-width: 1200px;
+    max-height: 1250px;
     margin: 0 auto;
 }
 .setbar{
     float: left;
     background-color: rgba(251, 251, 251, 1);
     color: rgba(61, 61, 61, 1);
+
     a{
         display: block;
         margin: 0 189px 0 30px;
         font-family: Cera Pro,sans-serif;
         font-size: 15px;
         line-height: 40px;
+        cursor: pointer;
     }
     .bottom-setbar{
         margin-bottom: 300px;
@@ -210,17 +213,49 @@ h4{
     margin: 0 auto;
 }
 .filter-left{
+    text-decoration: none;
     font-weight: normal;
     font-size: 15px;
     line-height: 16px;
     display: flex;
-    gap:20px
+    gap:20px;
+    cursor: pointer;
 }
-.filter-left span.allplants{
+.filter-left a.allplants{
     color: rgba(70, 163, 88, 1);
     border-bottom: 2px solid rgba(70, 163, 88, 1);
     padding-bottom: 7px;
+
 }
 .filter-right{
     white-space: nowrap;
+}
+.pagination {
+    max-width: 1200px;
+    width: 100%;
+    text-align: end;
+    background: white;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-right: 90px;
+    float: right;
+}
+
+.page, .page-active {
+    background-color: white;
+    color: rgba(61, 61, 61, 1);
+    padding: 10px 13px 9px 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid rgba(229, 229, 229, 1);;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 16px;
+}
+.page-active{
+    background-color: rgba(70, 163, 88, 1);
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 16px;
 }
