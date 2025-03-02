@@ -4,13 +4,18 @@
 nav{
     max-width: 1200px;
     margin: 12px auto;
+    display: flex;
+    justify-content: space-between;
 }
 nav img{
     width: 150px;
     height: 34px;
     top: 1px;
-    margin: 1px 229px 17px 0;
     vertical-align: top;
+}
+.header-buttons{
+    display: flex;
+    gap: 50px;
 }
 .but1{
     font-weight: 700;
@@ -18,7 +23,6 @@ nav img{
     line-height: 20px;
     border: none;
     background-color: white;
-    margin: 8px 50px 25px 0;
     vertical-align: top;
     cursor: pointer;
 }
@@ -28,7 +32,6 @@ nav img{
     line-height: 20px;
     border: none;
     background-color: white;
-    margin: 8px 50px 25px 0;
     vertical-align: top;
     cursor: pointer;
 }
@@ -52,7 +55,6 @@ nav img{
     position: relative;
     text-align: right;
     padding: 8px 17px 7px 41px;
-    margin: 0 0 18px 250px;
     img {
         position: absolute;
         z-index: 1;
@@ -97,20 +99,11 @@ nav img{
     margin: 0 0 0 43px;
 }
 .section1{
+    display: flex;
+    justify-content: space-between;
     max-width: 1200px;
     margin: 12px auto;
     background: linear-gradient(97.77deg, rgba(245, 245, 245, 0.5) -23.46%, rgba(245, 245, 245, 0.5) 107.51%);
-}
-.left{
-    display: inline-block;
-    vertical-align: top;
-    width: 51%;
-}
-.right{
-    display: inline-block;
-    vertical-align: top;
-    width: 48%;
-    text-align: right;
 }
 .flr{
     width: 507px;
@@ -135,11 +128,11 @@ nav img{
 }
 .section2{
     max-width: 1200px;
-    max-height: 1250px;
-    margin: 0 auto;
+    margin: 0 auto 30px;
+    display: flex;
+    justify-content: space-between;
 }
 .setbar{
-    float: left;
     background-color: rgba(251, 251, 251, 1);
     color: rgba(61, 61, 61, 1);
 
@@ -174,7 +167,6 @@ h4{
     margin-top: 6px;
 }
 .set{
-    float: right;
     img{
         width: 250px;
         height: 250px;
@@ -194,30 +186,32 @@ h4{
 .float-block{
     max-width: 840px;
     margin-top: 10px;
-    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
 }
 .card{
-    float: left;
     width: 258px;
-    margin: 33px 10px 33px 0;
+    margin: 37px 10px 33px 0;
 }
-.clearfix{
-    clear: both;
+.bottom-cards{
+    width: 258px;
+    margin: 37px 10px 0 0;
 }
 .nav1{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
     max-width: 838px;
     margin: 0 auto;
 }
 .filter-left{
+    display: flex;
     text-decoration: none;
     font-weight: normal;
     font-size: 15px;
     line-height: 16px;
-    display: flex;
     gap:20px;
     cursor: pointer;
 }
@@ -232,13 +226,10 @@ h4{
 }
 .pagination {
     max-width: 1200px;
-    width: 100%;
-    text-align: end;
-    background: white;
-    border-radius: 5px;
-    margin-top: 20px;
-    margin-right: 90px;
-    float: right;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    margin: 0 auto 80px;
 }
 
 .page, .page-active {
@@ -258,4 +249,175 @@ h4{
     font-weight: 700;
     font-size: 18px;
     line-height: 16px;
+}
+.section3{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.top-plants{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+}
+.left-plant{
+    display: flex;
+    max-width: 586px;
+    max-height: 302px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-plant-text{
+    text-align: right;
+    max-width: 586px;
+    max-height: 250px;
+}
+.img-left-plant{
+    width: 287px;
+    height: 292px;
+}
+.left-plant-info1{
+    font-weight: 900;
+    max-width: 150px;
+    font-size: 18px;
+    line-height: 24px;
+    margin-left: 140px;
+    margin-bottom: 9px;
+    color: rgba(61, 61, 61, 1);
+}
+.left-plant-info2{
+    font-weight: 400;
+    max-width: 292px;
+    width: 100%;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: right;
+    color: rgba(114, 114, 114, 1);
+    margin:0 0 25px 0;
+}
+.left-plant-button{
+    width: 140px;
+    height: 40px;
+    border-radius: 6px;
+    background: rgba(70, 163, 88, 1);
+    border: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 1);
+}
+.left-plant-button-img{
+    margin-left: 2px;
+    vertical-align: middle;
+}
+.left-plant-button:hover{
+    background-color: rgb(19, 122, 41)
+}
+.right-plant{
+    display: flex;
+    max-width: 586px;
+    max-height: 302px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.right-plant-text{
+    text-align: right;
+    max-width: 586px;
+    max-height: 250px;
+}
+.img-right-plant{
+    width: 287px;
+    height: 292px;
+}
+.right-plant-info1{
+    font-weight: 900;
+    max-width: 139px;
+    font-size: 18px;
+    line-height: 24px;
+    margin-left: 153px;
+    margin-bottom: 9px;
+    color: rgba(61, 61, 61, 1);
+}
+.right-plant-info2{
+    font-weight: 400;
+    max-width: 292px;
+    width: 100%;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: right;
+    color: rgba(114, 114, 114, 1);
+    margin:0 0 25px 0;
+}
+.right-plant-button{
+    width: 140px;
+    height: 40px;
+    border-radius: 6px;
+    background: rgba(70, 163, 88, 1);
+    border: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 1);
+}
+.right-plant-button:hover{
+    background-color: rgb(19, 122, 41)
+}
+.middle-text{
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.middle-top-text{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 16px;
+    text-align: center;
+    color: rgba(61, 61, 61, 1);
+    margin-bottom: 15px;
+}
+.middle-bottom-text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: rgba(114, 114, 114, 1);
+}
+.news-img{
+    width: 268px;
+    height: 195px;
+}
+.news{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin-top: 35px;
+}
+.news-div{
+    max-width: 268px;
+}
+.news-first-text{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(70, 163, 88, 1);
+    margin: 2px;
+}
+.news-second-text{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: rgba(61, 61, 61, 1);
+    margin: 2px;
+    max-width: 185px;
+}
+.news-third-text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: rgba(114, 114, 114, 1);
+    margin: 2px;
+}
+.news-forth-text{
+    vertical-align: middle;
 }
