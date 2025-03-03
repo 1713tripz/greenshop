@@ -174,12 +174,6 @@ h4{
     color: rgba(70, 163, 88, 1);
     margin-top: 6px;
 }
-.set{
-    img{
-        width: 250px;
-        height: 250px;
-    }
-}
 .ctg{
     margin: 14px 18px 7px;
     font-family: Cera Pro , sans-serif;
@@ -204,6 +198,11 @@ h4{
     margin: 33px 10px;
     position: relative;
 }
+.bottom-cards{
+    width: 258px;
+    margin: 37px 10px 0 0;
+    position: relative;
+}
 .transparent-line{
     position: absolute;
     top: 0;
@@ -214,9 +213,19 @@ h4{
     display: none;
 }
 .img-card{
-    width: 250px;
-    height: 250px;
-    padding: 24px 0 20px;
+    width: 258px;
+    height: 300px;
+    text-align: center;
+    background-color: rgba(251, 251, 251, 1);
+    margin-bottom: 12px;
+    .img-plant{
+        width: 250px;
+        height: 250px;
+    }
+}
+.img-forth-plant{
+    width: 224px;
+    height: 276px;
 }
 .img-card:hover{
     .img-card-icons img{
@@ -229,17 +238,23 @@ h4{
 .img-card-icons{
     display: flex;
     justify-content: center;
-    gap: 27px;
+    gap: 10px;
     position: absolute;
     right: 0;
     left: 0;
-    bottom: 70px;
+    bottom: 83px;
     img{
         width: 20px;
         height: 20px;
+        padding: 7px;
         display: none;
+        background-color: white;
+        border-radius: 4px;
+        transition: background-color 0.3s;
     }
-
+    :hover{
+        background-color: rgb(243, 243, 243);;
+    }
 }
 .third-plant-price{
     display: flex;
@@ -252,8 +267,7 @@ h4{
     font-weight: 500;
     font-size: 16px;
     line-height: 16px;
-    width: 80px;
-    height: 19px;
+    padding: 7px 8px 6px 9px;
     text-align: center;
     vertical-align: middle;
     color: white;
@@ -261,11 +275,6 @@ h4{
     position: absolute;
     top: 0;
     left: 0;
-}
-.bottom-cards{
-    width: 258px;
-    margin: 37px 10px 0 0;
-    position: relative;
 }
 .nav1{
     display: flex;
