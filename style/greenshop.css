@@ -17,7 +17,7 @@ nav img{
     display: flex;
     gap: 50px;
 }
-.but1{
+.first-header-button{
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
@@ -26,7 +26,7 @@ nav img{
     vertical-align: top;
     cursor: pointer;
 }
-.but2{
+.second-header-button{
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
@@ -41,7 +41,7 @@ nav img{
     height: 1px;
     margin: 0 auto;
 }
-.log{
+.login-header-button{
     background: rgba(70, 163, 88, 1);
     color: rgba(255, 255, 255, 1);
     width: 100px;
@@ -55,6 +55,7 @@ nav img{
     position: relative;
     text-align: right;
     padding: 8px 17px 7px 41px;
+    transition: background-color 0.5s , transform 0.3s;
     img {
         position: absolute;
         z-index: 1;
@@ -66,8 +67,9 @@ nav img{
         left: 17px;
     }
 }
-.log:hover{
+.login-header-button:hover{
     background-color: rgb(19, 122, 41);
+    transform: scale(1.1);
 }
 .first{
     font-weight: 500;
@@ -122,9 +124,11 @@ nav img{
     color: white;
     border: none;
     margin: 44px 0 0 41px;
+    transition: background-color 0.5s , transform 0.3s;
 }
 .but3:hover{
     background-color: rgb(19, 122, 41);
+    transform: scale(1.1);
 }
 .section2{
     max-width: 1200px;
@@ -132,7 +136,7 @@ nav img{
     display: flex;
     justify-content: space-between;
 }
-.setbar{
+.set-bar{
     background-color: rgba(251, 251, 251, 1);
     color: rgba(61, 61, 61, 1);
 
@@ -143,12 +147,16 @@ nav img{
         font-size: 15px;
         line-height: 40px;
         cursor: pointer;
+        transition: transform 0.3s;
     }
-    .bottom-setbar{
+    a:hover{
+        transform: scale(1.1);
+    }
+    .bottom-set-bar{
         margin-bottom: 300px;
     }
 }
-.hplants{
+.h-plants{
     color: rgba(70, 163, 88, 1);
     font-weight: 700;
 }
@@ -179,7 +187,7 @@ h4{
     font-size: 18px;
     line-height: 16px;
 }
-.supersale{
+.super-sale{
     width: 310px;
     height: 470px;
 }
@@ -193,11 +201,71 @@ h4{
 }
 .card{
     width: 258px;
-    margin: 37px 10px 33px 0;
+    margin: 33px 10px;
+    position: relative;
+}
+.transparent-line{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 1px;
+    background: green;
+    display: none;
+}
+.img-card{
+    width: 250px;
+    height: 250px;
+    padding: 24px 0 20px;
+}
+.img-card:hover{
+    .img-card-icons img{
+        display: flex;
+    }
+    .transparent-line{
+        display: block;
+    }
+}
+.img-card-icons{
+    display: flex;
+    justify-content: center;
+    gap: 27px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 70px;
+    img{
+        width: 20px;
+        height: 20px;
+        display: none;
+    }
+
+}
+.third-plant-price{
+    display: flex;
+    gap: 16px;
+    s{
+        color: rgba(165, 165, 165, 1)
+    }
+}
+.third-plant-sale{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    width: 80px;
+    height: 19px;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    background-color: rgba(70, 163, 88, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .bottom-cards{
     width: 258px;
     margin: 37px 10px 0 0;
+    position: relative;
 }
 .nav1{
     display: flex;
@@ -215,9 +283,10 @@ h4{
     gap:20px;
     cursor: pointer;
 }
-.filter-left a.allplants{
+.filter-left a.all-plants{
     color: rgba(70, 163, 88, 1);
-    border-bottom: 2px solid rgba(70, 163, 88, 1);
+    font-weight: 700;
+    border-bottom: 3px solid rgba(70, 163, 88, 1);
     padding-bottom: 7px;
 
 }
@@ -243,12 +312,22 @@ h4{
     font-size: 18px;
     line-height: 16px;
 }
+.page{
+    transition: background-color 0.3s;
+    &:hover {
+    background-color: rgb(243, 243, 243);
+    }
+}
 .page-active{
     background-color: rgba(70, 163, 88, 1);
     color: white;
     font-weight: 700;
     font-size: 18px;
     line-height: 16px;
+    transition: background-color 0.3s;
+    &:hover{
+        background-color: rgb(19, 122, 41);
+    }
 }
 .section3{
     max-width: 1200px;
@@ -296,23 +375,13 @@ h4{
     color: rgba(114, 114, 114, 1);
     margin:0 0 25px 0;
 }
-.left-plant-button{
-    width: 140px;
-    height: 40px;
-    border-radius: 6px;
-    background: rgba(70, 163, 88, 1);
-    border: none;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 20px;
-    color: rgba(255, 255, 255, 1);
-}
 .left-plant-button-img{
     margin-left: 2px;
     vertical-align: middle;
 }
 .left-plant-button:hover{
-    background-color: rgb(19, 122, 41)
+    background-color: rgb(19, 122, 41);
+    transform: scale(1.1);
 }
 .right-plant{
     display: flex;
@@ -350,7 +419,7 @@ h4{
     color: rgba(114, 114, 114, 1);
     margin:0 0 25px 0;
 }
-.right-plant-button{
+.plant-button{
     width: 140px;
     height: 40px;
     border-radius: 6px;
@@ -360,8 +429,10 @@ h4{
     font-size: 14px;
     line-height: 20px;
     color: rgba(255, 255, 255, 1);
+    transition: background-color 0.3s, transform 0.3s;
 }
-.right-plant-button:hover{
+.plant-button:hover{
+    transform: scale(1.1);
     background-color: rgb(19, 122, 41)
 }
 .middle-text{
@@ -420,4 +491,10 @@ h4{
 }
 .news-forth-text{
     vertical-align: middle;
+    color: rgba(61, 61, 61, 1);
+    cursor: pointer;
+    transition: color 0.3s;
+    &:hover {
+        color: rgba(70, 163, 88, 1);
+    }
 }
