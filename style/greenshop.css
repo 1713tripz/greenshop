@@ -250,6 +250,7 @@ h4{
         display: none;
         background-color: white;
         border-radius: 4px;
+        cursor: pointer;
         transition: background-color 0.3s;
     }
     :hover{
