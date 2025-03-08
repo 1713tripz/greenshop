@@ -12,6 +12,9 @@ nav{
     justify-content: space-between;
     border-bottom: 1px solid rgba(70, 163, 88, 0.5);
 }
+#plant-care{
+    width: 76px;
+}
 nav img{
     width: 150px;
     height: 34px;
@@ -394,6 +397,7 @@ h4{
     align-items: center;
     max-width: 838px;
     margin: 0 auto;
+    border: transparent;
 }
 .filter-left{
     display: flex;
@@ -618,4 +622,169 @@ h4{
     &:hover {
         color: rgba(70, 163, 88, 1);
     }
+}
+.section4{
+    max-width: 1200px;
+    margin: 0 auto;
+    border-bottom: 1px solid rgba(70, 163, 88, 0.2);
+}
+.top-section4-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 91px;
+    background: rgba(251, 251, 251, 1);
+}
+.top-left-section4-box{
+    display: flex;
+    justify-content: space-between;
+}
+.top-left-section4-box-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 30px 0 30px;
+    border-right: 1px solid rgba(70, 163, 88, 0.1);
+}
+.first-section4-text{
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 16px;
+    margin: 15px 0 9px 0;
+    color: rgba(61, 61, 61, 1);
+}
+.second-section4-text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    margin: 0 0 24px;
+    color: rgba(114, 114, 114, 1);
+}
+.top-right-section4-box{
+    display: flex;
+    flex-direction: column;
+    max-width: 354px;
+}
+.top-right-section4-box input{
+    max-width: 329px;
+    width: 100%;
+    border-radius: 6px;
+    border: none;
+    color: rgba(172, 172, 172, 1);
+    padding: 12px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.06);
+    margin: 25px 0 18px;
+    &:focus{
+        outline: none;
+        border: none;
+        color: rgba(61, 61, 61, 1);
+    }
+}
+.input-section4-box{
+    position: relative;
+}
+.top-right-section4-box button{
+    max-width: 85px;
+    padding: 12px;
+    width: 100%;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border: none;
+    background: rgba(70, 163, 88, 1);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 16px;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    position: absolute;
+    top: 25px;
+    right: 1px;
+    transition: background-color 0.3s;
+    &:hover{
+        background: rgb(19, 122, 41)
+    }
+}
+.middle-section4-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 22px 16px 23px;
+    max-height: 88px;
+    background: linear-gradient(90deg, #EDF6EF 0%, #52C368 100%);
+}
+.middle-section4-text{
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    position: relative;
+}
+.middle-section4-svg{
+    width: 20px;
+    height: 20px;
+}
+.bottom-section4-box{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    padding: 15px 155px 21px 25px;
+    background: rgba(251, 251, 251, 1);
+}
+.bottom-left-section4-box{
+    display: flex;
+    justify-content: space-between;
+    max-width: 523px;
+    width: 100%;
+}
+.bottom-left-section4-box-text{
+    display: flex;
+    flex-direction: column;
+    color: rgba(61, 61, 61, 1);
+}
+.first-bottom-left-section4-box-text{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 16px;
+}
+.second-bottom-left-section4-box-text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    transition: scale 0.3s ,color 0.3s;
+    &:hover{
+        scale: 1.1;
+        color: rgba(70, 163, 88, 1);
+    }
+}
+.bottom-right-section4-box{
+    max-width: 224px;
+    width: 100%;
+}
+.bottom-right-section4-box-text {
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 4px;
+        border: 1px solid rgba(70, 163, 88, 0.2);
+    }
+}
+.bottom-right-section4-flex{
+    display: flex;
+    gap: 10px;
+}
+.footer{
+    max-width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 6px 0 22px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: rgba(61, 61, 61, 1);
 }
