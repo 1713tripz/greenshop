@@ -408,6 +408,12 @@ h4{
     gap:20px;
     cursor: pointer;
 }
+.filter-left-scale{
+    transition: scale 0.3s;
+    &:hover{
+        scale: 1.1;
+    }
+}
 .filter-left a.all-plants{
     color: rgba(70, 163, 88, 1);
     font-weight: 700;
@@ -417,6 +423,19 @@ h4{
 }
 .filter-right{
     white-space: nowrap;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 16px;
+    span{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    img{
+        width: 12px;
+        height: 16px;
+    }
+
 }
 .pagination {
     max-width: 1200px;
