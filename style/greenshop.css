@@ -5,42 +5,34 @@ a{
     text-decoration: none;
     color: rgb(61, 61, 61);
 }
-nav{
+header nav{
     max-width: 1200px;
-    margin: 12px auto;
+    margin: 30px auto 12px;
     display: flex;
+    align-items: flex-start;
     justify-content: space-between;
     border-bottom: 1px solid rgba(70, 163, 88, 0.5);
 }
 #plant-care{
     width: 76px;
 }
-nav img{
-    width: 150px;
-    height: 34px;
-    top: 1px;
-    vertical-align: top;
-}
 .header-buttons{
     display: flex;
     gap: 50px;
 }
-/*.header-button{*/
-/*    font-weight: 700;*/
-/*    font-size: 16px;*/
-/*    line-height: 20px;*/
-/*    border: none;*/
-/*    background-color: white;*/
-/*    vertical-align: top;*/
-/*    cursor: pointer;*/
-/*}*/
+.login-header-buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
 .header-button{
+    padding: 7px 0 21px;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
     background-color: white;
     color: rgb(61, 61, 61);
-    padding-bottom: 24px;
     cursor: pointer;
     border-bottom: 3px solid transparent;
     transition: border-bottom 0.3s ;
@@ -54,6 +46,7 @@ a.header-button:nth-child(3){
 }
 .header-dropdown{
     position: relative;
+    padding-top: 7px;
     &:hover{
         .dropdown-box{
             display: flex;
@@ -91,7 +84,7 @@ a.header-button:nth-child(3){
     position: relative;
     background-color: rgba(237, 246, 238, 1);
     transition: font-size 0.3s, background-color 0.3s, color 0.3s;
-    img{
+    svg{
         width: 6px;
         height: 10px;
         padding-right: 19px;
@@ -113,15 +106,11 @@ a.header-button:nth-child(3){
     position: absolute;
     right: 0;
     top: 13px;
-    width: 6px;
-    height: 10px;
 }
 .dropdown-content-arrow-white{
     position: absolute;
     right: 0;
     top: 13px;
-    width: 6px;
-    height: 10px;
     display: none;
 }
 .second-header-dropdown{
@@ -156,34 +145,28 @@ a.header-button:nth-child(3){
 }
 .login-header-button{
     background: rgba(70, 163, 88, 1);
-    color: rgba(255, 255, 255, 1);
-    width: 100px;
-    height: 35px;
-    margin: auto 0;
+    color: white;
+    max-width: 100px;
+    max-height: 35px;
     border-radius: 6px;
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
-    border: none;
     cursor: pointer;
     position: relative;
     text-align: right;
     padding: 8px 17px 7px 41px;
     transition: background-color 0.5s , transform 0.3s;
-    img {
+    svg {
         position: absolute;
         z-index: 1;
-        background: transparent;
-        border: none;
-        width: 20px;
-        height: 20px;
         top: 7px;
         left: 17px;
     }
-}
-.login-header-button:hover{
-    background-color: rgb(19, 122, 41);
-    transform: scale(1.1);
+    &:hover{
+        background-color: rgb(19, 122, 41);
+        transform: scale(1.1);
+    }
 }
 .first{
     font-weight: 500;
@@ -192,6 +175,7 @@ a.header-button:nth-child(3){
     letter-spacing: normal;
     color: rgba(61, 61, 61, 1);
     margin: 68px 0 0 43px;
+    text-transform: uppercase;
 }
 .second{
     max-width: 530px;
@@ -218,7 +202,7 @@ a.header-button:nth-child(3){
     display: flex;
     justify-content: space-between;
     max-width: 1200px;
-    margin: 12px auto;
+    margin: 12px auto 40px;
     background: linear-gradient(97.77deg, rgba(245, 245, 245, 0.5) -23.46%, rgba(245, 245, 245, 0.5) 107.51%);
 }
 .flr{
@@ -246,7 +230,7 @@ a.header-button:nth-child(3){
 }
 .section2{
     max-width: 1200px;
-    margin: 0 auto 30px;
+    margin: 0 auto 90px;
     display: flex;
     justify-content: space-between;
 }
@@ -266,9 +250,6 @@ a.header-button:nth-child(3){
     a:hover{
         transform: scale(1.1);
     }
-    .bottom-set-bar{
-        margin-bottom: 300px;
-    }
 }
 .h-plants{
     color: rgba(70, 163, 88, 1);
@@ -279,7 +260,7 @@ h5{
     font-weight: 400;
     font-size: 16px;
     line-height: 16px;
-    margin: 6px 0;
+    margin: 6px 0 0;
 }
 h4{
     font-weight: 700;
@@ -287,6 +268,7 @@ h4{
     line-height: 16px;
     color: rgba(70, 163, 88, 1);
     margin-top: 6px;
+    margin-bottom: 0;
 }
 .ctg{
     margin: 14px 18px 7px;
@@ -301,20 +283,14 @@ h4{
 }
 .float-block{
     max-width: 840px;
-    margin-top: 10px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-
+    row-gap: 70px;
+    margin-top: 31px;
 }
 .card{
     width: 258px;
-    margin: 33px 10px;
-    position: relative;
-}
-.bottom-cards{
-    width: 258px;
-    margin: 37px 10px 0 0;
     position: relative;
 }
 .transparent-line{
@@ -332,7 +308,8 @@ h4{
     text-align: center;
     background-color: rgba(251, 251, 251, 1);
     margin-bottom: 12px;
-    .img-plant{
+    img{
+        padding-top: 20px;
         width: 250px;
         height: 250px;
     }
@@ -342,7 +319,7 @@ h4{
     height: 276px;
 }
 .img-card:hover{
-    .img-card-icons img{
+    .img-card-icons svg{
         display: flex;
     }
     .transparent-line{
@@ -356,8 +333,8 @@ h4{
     position: absolute;
     right: 0;
     left: 0;
-    bottom: 83px;
-    img{
+    bottom: 57px;
+    svg{
         width: 20px;
         height: 20px;
         padding: 7px;
@@ -405,7 +382,7 @@ h4{
     font-weight: normal;
     font-size: 15px;
     line-height: 16px;
-    gap:20px;
+    gap:38px;
     cursor: pointer;
 }
 .filter-left-scale{
@@ -431,24 +408,23 @@ h4{
         align-items: center;
         gap: 5px;
     }
-    img{
-        width: 12px;
-        height: 16px;
-    }
-
 }
 .pagination {
     max-width: 1200px;
     display: flex;
     justify-content: end;
     gap: 10px;
-    margin: 0 auto 80px;
+    margin: 0 auto 142px;
 }
 
 .page, .page-active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: white;
     color: rgba(61, 61, 61, 1);
-    padding: 10px 13px 9px 14px;
+    width: 35px;
+    height: 35px;
     cursor: pointer;
     border-radius: 5px;
     border: 1px solid rgba(229, 229, 229, 1);;
@@ -475,97 +451,66 @@ h4{
 }
 .section3{
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto 97px;
 }
 .top-plants{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 80px;
+    margin-bottom: 134px;
 }
 .left-plant{
     display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
     max-width: 586px;
-    max-height: 302px;
     width: 100%;
-    justify-content: space-between;
-    align-items: center;
-}
-.left-plant-text{
-    text-align: right;
-    max-width: 586px;
     max-height: 250px;
+    background-color: rgba(251, 251, 251, 1);
+    position: relative;
 }
+
 .img-left-plant{
+    position: absolute;
+    left: 0;
+    top: -50px;
     width: 287px;
     height: 292px;
 }
 .left-plant-info1{
+    margin: 0;
+    text-align: right;
     font-weight: 900;
     max-width: 150px;
     font-size: 18px;
     line-height: 24px;
-    margin-left: 140px;
-    margin-bottom: 9px;
+    padding: 37px 30px 9px 0;
     color: rgba(61, 61, 61, 1);
 }
 .left-plant-info2{
+    margin: 0;
+    padding-right: 30px;
+    padding-bottom: 25px;
+    text-align: right;
     font-weight: 400;
     max-width: 292px;
     width: 100%;
     font-size: 14px;
     line-height: 24px;
-    text-align: right;
     color: rgba(114, 114, 114, 1);
-    margin:0 0 25px 0;
 }
-.left-plant-button-img{
-    margin-left: 2px;
-    vertical-align: middle;
-}
+
 .left-plant-button:hover{
     background-color: rgb(19, 122, 41);
     transform: scale(1.1);
 }
-.right-plant{
-    display: flex;
-    max-width: 586px;
-    max-height: 302px;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-}
-.right-plant-text{
-    text-align: right;
-    max-width: 586px;
-    max-height: 250px;
-}
-.img-right-plant{
-    width: 287px;
-    height: 292px;
-}
-.right-plant-info1{
-    font-weight: 900;
-    max-width: 139px;
-    font-size: 18px;
-    line-height: 24px;
-    margin-left: 153px;
-    margin-bottom: 9px;
-    color: rgba(61, 61, 61, 1);
-}
-.right-plant-info2{
-    font-weight: 400;
-    max-width: 292px;
-    width: 100%;
-    font-size: 14px;
-    line-height: 24px;
-    text-align: right;
-    color: rgba(114, 114, 114, 1);
-    margin:0 0 25px 0;
-}
+
 .plant-button{
     width: 140px;
     height: 40px;
+    margin-right: 30px;
+    margin-bottom: 46px;
     border-radius: 6px;
     background: rgba(70, 163, 88, 1);
     border: none;
@@ -574,6 +519,11 @@ h4{
     line-height: 20px;
     color: rgba(255, 255, 255, 1);
     transition: background-color 0.3s, transform 0.3s;
+    svg{
+        margin-left: 2px;
+        vertical-align: middle;
+    }
+
 }
 .plant-button:hover{
     transform: scale(1.1);
@@ -610,7 +560,13 @@ h4{
 }
 .news-div{
     max-width: 268px;
+    background: #FBFBFB;
+    padding-bottom: 12px;
 }
+.news-div-text{
+    padding-left: 15px;
+}
+
 .news-first-text{
     font-weight: 500;
     font-size: 14px;
@@ -624,7 +580,7 @@ h4{
     line-height: 26px;
     color: rgba(61, 61, 61, 1);
     margin: 2px;
-    max-width: 185px;
+    max-width: 205px;
 }
 .news-third-text{
     font-weight: 400;
@@ -634,12 +590,21 @@ h4{
     margin: 2px;
 }
 .news-forth-text{
-    vertical-align: middle;
+    display: flex;
+    align-items: flex-end;
+    justify-content: start;
+    gap: 3px;
     color: rgba(61, 61, 61, 1);
     cursor: pointer;
     transition: color 0.3s;
+    svg{
+        padding-top: 9px;
+    }
     &:hover {
         color: rgba(70, 163, 88, 1);
+        svg {
+            color: inherit;
+        }
     }
 }
 .section4{
@@ -649,9 +614,10 @@ h4{
 }
 .top-section4-box{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin-top: 91px;
+    gap: 40px;
+    padding-bottom: 6px;
+    max-height: 250px;
     background: rgba(251, 251, 251, 1);
 }
 .top-left-section4-box{
@@ -663,7 +629,8 @@ h4{
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 0 30px 0 30px;
+    max-width: 205px;
+    padding: 30px 30px 0 25px;
     border-right: 1px solid rgba(70, 163, 88, 0.1);
 }
 .first-section4-text{
@@ -728,8 +695,8 @@ h4{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 22px 16px 23px;
-    max-height: 88px;
+    padding: 0 267px 0 23px;
+    height: 88px;
     background: linear-gradient(90deg, #EDF6EF 0%, #52C368 100%);
 }
 .middle-section4-text{
@@ -740,10 +707,10 @@ h4{
     font-size: 14px;
     line-height: 22px;
     position: relative;
-}
-.middle-section4-svg{
-    width: 20px;
-    height: 20px;
+    transition: scale 0.3s;
+    &:hover{
+        scale: 1.03;
+    }
 }
 .bottom-section4-box{
     display: flex;
@@ -754,8 +721,7 @@ h4{
 }
 .bottom-left-section4-box{
     display: flex;
-    justify-content: space-between;
-    max-width: 523px;
+    gap: 152px;
     width: 100%;
 }
 .bottom-left-section4-box-text{
@@ -767,6 +733,7 @@ h4{
     font-weight: 700;
     font-size: 18px;
     line-height: 16px;
+    margin-bottom: 9px;
 }
 .second-bottom-left-section4-box-text{
     font-weight: 400;
@@ -781,6 +748,9 @@ h4{
 .bottom-right-section4-box{
     max-width: 224px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
 }
 .bottom-right-section4-box-text {
     a {
@@ -795,7 +765,7 @@ h4{
 }
 .bottom-right-section4-flex{
     display: flex;
-    gap: 10px;
+    gap: 8px;
 }
 .footer{
     max-width: 1200px;
