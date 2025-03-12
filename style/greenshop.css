@@ -761,6 +761,10 @@ h4{
         height: 30px;
         border-radius: 4px;
         border: 1px solid rgba(70, 163, 88, 0.2);
+        transition: scale 0.3s;
+        &:hover{
+            scale: 1.1;
+        }
     }
 }
 .bottom-right-section4-flex{
