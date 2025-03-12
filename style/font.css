@@ -32,3 +32,11 @@
     font-weight: 300;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Cera Pro';
+    src: local('Cera Pro'),
+        url('../fonts/CeraPro-Medium.woff2') format('woff2'),
+        url('../fonts/CeraPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}

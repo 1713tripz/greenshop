@@ -75,7 +75,7 @@
         <path d="M14.8126 8.79428H3.56258" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
         <path d="M10.2748 4.2759C10.2748 4.2759 14.8123 6.72165 14.8123 8.79315C14.8123 10.8662 10.2748 13.3127 10.2748 13.3127" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
-    <symbol id="google" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0_2_2044)">
             <path d="M16.4336 17.6055C14.6992 19.0703 12.4492 20 9.99999 20C6.35545 20 3.1562 17.9922 1.42186 15.0625L2.07116 12.0695L4.9492 11.5352C5.61717 13.6914 7.63276 15.2734 9.99999 15.2734C11.1484 15.2734 12.2148 14.9102 13.0937 14.2656L15.8594 14.6875L16.4336 17.6055Z" fill="#59C36A"/>
             <path d="M16.4336 17.6055L15.8594 14.6875L13.0937 14.2656C12.2148 14.9102 11.1484 15.2735 10 15.2735V20C12.4493 20 14.6992 19.0703 16.4336 17.6055Z" fill="#00A66C"/>

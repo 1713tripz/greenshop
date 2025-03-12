@@ -1,3 +1,6 @@
+*{
+    font-family: "Cera Pro", sans-serif;
+}
 body {
     font-family: "Cera Pro", sans-serif;
     display: flex;
@@ -19,7 +22,7 @@ body {
     display: flex;
     gap: 10px;
     margin-bottom: 40px;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 20px;
     line-height: 16px;
 }
@@ -34,23 +37,32 @@ body {
 }
 form{
     width: 300px;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 0 auto 16px;
 }
 form label{
     font-weight: 400;
     font-size: 13px;
     line-height: 16px;
-    margin-bottom: 14px;
+    margin-bottom: -5px;
 }
 input{
     display: block;
-    margin: 16px 0;
     max-width: 270px;
-    padding: 12px 14px;
+    width: 281px;
+    height: 37px;
+    padding-left: 14px;
     font-size: 14px;
-    width: 100%;
     border-radius: 5px;
-    border: 1px solid rgba(234, 234, 234, 1)
+    border: 1px solid rgba(234, 234, 234, 1);
+    &:focus{
+        outline: none;
+    }
+}
+input::placeholder{
+    color: #A5A5A5;
 }
 button{
     width: 300px;
@@ -65,7 +77,7 @@ a{
     text-decoration: none;
 }
 button.main{
-    margin: 25px 0;
+    margin: 27px 0 10px;
     padding: 16px 14px 13px;
     font-weight: 700;
     font-size: 16px;
@@ -84,7 +96,7 @@ button:hover{
     font-size: 13px;
     line-height: 13px;
     margin-bottom: 27px;
-    margin-top: 11px;
+    margin-top: 14px;
 }
 .href{
     text-decoration: none;
@@ -117,9 +129,13 @@ button.secondary{
         z-index: 1;
         width: 20px;
         height: 20px;
-        right: 12px;
+        right: 30px;
         top: 10px;
         background: transparent;
         border: none;
     }
+}
+.footer{
+    background-color: #46A358;
+    height: 10px;
 }
