@@ -1,9 +1,9 @@
 *{
     font-family: "Cera Pro", sans-serif;
 }
-body {
+main {
     font-family: "Cera Pro", sans-serif;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     height: 100vh;
@@ -30,10 +30,16 @@ body {
     text-decoration: none;
     color: rgba(61, 61, 61, 1);
     font-size: 20px;
+    cursor: default;
 }
 .login a.reg {
     color: rgba(70, 163, 88, 1);
     font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover{
+        scale: 1.05;
+    }
 }
 form{
     width: 300px;
@@ -48,12 +54,13 @@ form label{
     line-height: 16px;
     margin-bottom: -5px;
 }
-input{
+.input{
     display: block;
-    max-width: 270px;
+    max-width: 300px;
     width: 281px;
     height: 37px;
     padding-left: 14px;
+    padding-right: 4px;
     font-size: 14px;
     border-radius: 5px;
     border: 1px solid rgba(234, 234, 234, 1);
@@ -76,8 +83,7 @@ button{
 a{
     text-decoration: none;
 }
-button.main{
-    margin: 27px 0 10px;
+.register-button{
     padding: 16px 14px 13px;
     font-weight: 700;
     font-size: 16px;
@@ -87,6 +93,11 @@ button.main{
     background-color: rgba(70, 163, 88, 1);
     color: rgba(255, 255, 255, 1);
     border: none;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        background-color: rgb(19, 122, 41);
+        transform: scale(1.01);
+    }
 }
 button:hover{
      background-color: rgb(19, 122, 41);
@@ -113,6 +124,11 @@ button.secondary{
     height: 40px;
     max-width: 100%;
     border: 1px solid rgba(234, 234, 234, 1);
+    transition: all 0.3s;
+    &:hover{
+        border: 1px solid rgba(106, 106, 106, 0.1);
+        background-color: rgb(227, 227, 227);
+    }
 }
 .border-line{
     display: inline-block;
@@ -129,13 +145,117 @@ button.secondary{
         z-index: 1;
         width: 20px;
         height: 20px;
-        right: 30px;
+        right: 19px;
         top: 10px;
         background: transparent;
         border: none;
     }
 }
-.footer{
-    background-color: #46A358;
-    height: 10px;
+ .checkbox-wrapper-31:hover .check {
+     stroke-dashoffset: 0;
+ }
+
+.checkbox-wrapper-31 {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+.checkbox-wrapper-31 .background {
+    fill: #ccc;
+    transition: ease all 0.6s;
+    -webkit-transition: ease all 0.6s;
+}
+.checkbox-wrapper-31 .stroke {
+    fill: none;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+    stroke-width: 2px;
+    stroke-dashoffset: 100;
+    stroke-dasharray: 100;
+    transition: ease all 0.6s;
+    -webkit-transition: ease all 0.6s;
+}
+.checkbox-wrapper-31 .check {
+    fill: none;
+    stroke: #fff;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2px;
+    stroke-dashoffset: 22;
+    stroke-dasharray: 22;
+    transition: ease all 0.6s;
+    -webkit-transition: ease all 0.6s;
+}
+.checkbox-wrapper-31 input[type=checkbox] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    margin: 0;
+    opacity: 0;
+    -webkit-appearance: none;
+}
+.checkbox-wrapper-31 input[type=checkbox]:hover {
+    cursor: pointer;
+}
+.checkbox-wrapper-31 input[type=checkbox]:checked + svg .background {
+    fill: #6cbe45;
+}
+.checkbox-wrapper-31 input[type=checkbox]:checked + svg .stroke {
+    stroke-dashoffset: 0;
+}
+.checkbox-wrapper-31 input[type=checkbox]:checked + svg .check {
+    stroke-dashoffset: 0;
+}
+.confirm-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.confirm{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.confirm h2{
+    font-weight: 400;
+    font-size: 9px;
+    color: #727272;
+}
+#preloader{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s, visibility 0.5s;
+}
+.loader {
+    width: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 8px solid #0000;
+    border-right-color: #ffa50097;
+    position: relative;
+    animation: l24 1s infinite linear;
+}
+.loader:before,
+.loader:after {
+    content: "";
+    position: absolute;
+    inset: -8px;
+    border-radius: 50%;
+    border: inherit;
+    animation: inherit;
+    animation-duration: 2s;
+}
+.loader:after {
+    animation-duration: 4s;
+}
+@keyframes l24 {
+    100% {transform: rotate(1turn)}
 }
