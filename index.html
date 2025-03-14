@@ -10,7 +10,7 @@
     <div id="preloader">
         <div class="loader"></div>
     </div>
-        <header>
+        <header class="header">
             <nav>
                 <svg width="150px" height="34px"><use href="sprite.svg#group"/></svg>
                 <div class="header-buttons">
@@ -58,7 +58,7 @@
                 </div>
             </section>
         </header>
-        <body>
+        <body class="body">
             <section class="section2">
                 <div class="set-bar">
                     <h1 class="ctg">Categories</h1>
@@ -370,14 +370,21 @@
                 <h2 class="footer" >© 2021 GreenShop. All Rights Reserved.</h2>
             </footer>
         </body>
-        <script>
-            window.addEventListener("load", function() {
-                let preloader = document.getElementById("preloader");
-                preloader.style.opacity = "0";
-                preloader.style.visibility = "hidden";
+    <!--        <script>-->
+    <!--            window.addEventListener("load", function () {-->
+    <!--                let preloader = document.getElementById("preloader");-->
+    <!--                let headerContent = document.querySelector(".header");-->
+    <!--                let bodyContent = document.querySelector(".body");-->
 
+    <!--                setTimeout(function () {-->
+    <!--                    preloader.style.opacity = "0";-->
+    <!--                    preloader.style.visibility = "hidden";-->
 
-                document.querySelector("main").style.display = "block";
-            });
-        </script>
+    <!--                    setTimeout(() => {-->
+    <!--                        if (headerContent) headerContent.style.display = "block";-->
+    <!--                        if (bodyContent) bodyContent.style.display = "block";-->
+    <!--                    }, 500);-->
+    <!--&lt;!&ndash;        }, 3000);-->
+    <!--            });-->
+    <!--        </script>-->
 </html>

@@ -40,15 +40,19 @@
     </div>
 </main>
 <script>
-    window.addEventListener("load", function() {
+    window.addEventListener("load", function () {
         let preloader = document.getElementById("preloader");
-        preloader.style.opacity = "0";
-        preloader.style.visibility = "hidden";
+        let mainContent = document.querySelector(".main");
 
+        setTimeout(function () {
+            preloader.style.opacity = "0";
+            preloader.style.visibility = "hidden";
 
-        document.querySelector(".main").style.display = "flex";
-        });
-
+            setTimeout(() => {
+                mainContent.style.display = "flex";
+            }, 500);
+        }, 2000);
+    });
     const togglePass = document.querySelectorAll('.toggle-pass');
     togglePass.forEach((toggle) => {
         toggle.addEventListener('click', (event) => {
