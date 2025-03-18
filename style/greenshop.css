@@ -850,6 +850,13 @@ h4{
         line-height: 24px;
         color: rgba(114, 114, 114, 1);
     }
+    .top-left-section4-box {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .top-plants{
+        justify-content: center;
+    }
     .news {
         justify-content: center;
         flex-wrap: wrap;
