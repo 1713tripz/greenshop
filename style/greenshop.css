@@ -813,6 +813,7 @@ h4{
 #mobile-nav-link {
     background-color: #6cbe45;
     color: #fff;
+    border: none;
 }
 @media (max-width : 1190px) {
     .top-plants {
