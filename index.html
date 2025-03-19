@@ -10,6 +10,20 @@
     <div id="preloader">
         <div class="loader"></div>
     </div>
+    <div class="burger-menu">
+        <div class="burger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <nav class="mobile-nav" id="mobileNav">
+        <a href="#" class="mobile-nav-link">Home</a>
+        <a href="#" class="mobile-nav-link">Shop</a>
+        <a href="#" class="mobile-nav-link">Plant Care</a>
+        <a href="#" class="mobile-nav-link">Blogs</a>
+        <a href="login.html" class="mobile-nav-link" id="mobile-nav-link">Login</a>
+    </nav>
         <header class="header">
             <nav>
                 <svg width="150px" height="34px"><use href="sprite.svg#group"/></svg>
@@ -370,21 +384,19 @@
                 <h2 class="footer" >© 2021 GreenShop. All Rights Reserved.</h2>
             </footer>
         </body>
-<!--            <script>-->
-<!--                window.addEventListener("load", function () {-->
-<!--                    let preloader = document.getElementById("preloader");-->
-<!--                    let headerContent = document.querySelector(".header");-->
-<!--                    let bodyContent = document.querySelector(".body");-->
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("mobileNav");
+            menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+        }
 
-<!--                    setTimeout(function () {-->
-<!--                        preloader.style.opacity = "0";-->
-<!--                        preloader.style.visibility = "hidden";-->
-
-<!--                        setTimeout(() => {-->
-<!--                            if (headerContent) headerContent.style.display = "block";-->
-<!--                            if (bodyContent) bodyContent.style.display = "block";-->
-<!--                        }, 500);-->
-<!--                  }, 3000);-->
-<!--                });-->
-<!--            </script>-->
+        window.addEventListener("scroll", function () {
+            const burger = document.getElementById("burgerMenu");
+            if (window.scrollY > 50) {
+                burger.style.top = "10px";
+            } else {
+                burger.style.top = "15px";
+            }
+        });
+    </script>
 </html>

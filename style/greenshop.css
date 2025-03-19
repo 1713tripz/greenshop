@@ -778,12 +778,57 @@ h4{
     line-height: 30px;
     color: rgba(61, 61, 61, 1);
 }
+.burger-menu {
+    display: none;
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 1000;
+}
+.burger-icon span {
+    display: block;
+    width: 30px;
+    height: 4px;
+    margin: 5px;
+    background-color: #46a358;
+}
+.mobile-nav {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 50px;
+    right: 20px;
+    background: white;
+    border: 1px solid #ccc;
+    width: 200px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    z-index: 999;
+}
+.mobile-nav a {
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    border-bottom: 1px solid #eee;
+}
+#mobile-nav-link {
+    background-color: #6cbe45;
+    color: #fff;
+}
+@media (max-width: 1024px) {
+    .float-block {
+        justify-content: space-around;
+    }
+}
 @media (max-width: 850px){
     .float-block {
         justify-content: center;
     }
 }
-@media (max-width: 750px) {
+@media (max-width: 768px) {
+    .burger-menu{
+        display: block;
+    }
     .flr{
         display: none;
     }
@@ -876,6 +921,12 @@ h4{
         max-height: none;
         flex-wrap: nowrap;
         flex-direction: column;
+    }
+    .top-right-section4-box input {
+        max-width: 279px;
+    }
+    .top-left-section4-box-text {
+        border-right: none;
     }
 }
 /*#preloader{*/
