@@ -614,7 +614,6 @@ h4{
     align-items: center;
     gap: 40px;
     padding-bottom: 6px;
-    max-height: 250px;
     background: rgba(251, 251, 251, 1);
 }
 .top-left-section4-box{
@@ -815,6 +814,11 @@ h4{
     background-color: #6cbe45;
     color: #fff;
 }
+@media (max-width : 1190px) {
+    .top-plants {
+        gap: 40px;
+        justify-content: center;
+}
 @media (max-width: 1024px) {
     .float-block {
         justify-content: space-around;
@@ -918,7 +922,6 @@ h4{
         display: none;
     }
     .top-section4-box {
-        max-height: none;
         flex-wrap: nowrap;
         flex-direction: column;
     }
@@ -928,6 +931,7 @@ h4{
     .top-left-section4-box-text {
         border-right: none;
     }
+}
 }
 /*#preloader{*/
 /*    position: fixed;*/
